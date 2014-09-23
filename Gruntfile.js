@@ -343,9 +343,9 @@ module.exports = function (grunt) {
           'Element img is missing required attribute src.'
         ]
       },
-      files: {
-        src: '_gh_pages/**/*.html'
-      }
+//      files: {
+  //      src: '_gh_pages/**/*.html'
+    //  }
     },
 
     watch: {
