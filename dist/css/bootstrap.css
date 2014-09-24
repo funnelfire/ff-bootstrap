@@ -6175,11 +6175,11 @@ button.close {
   min-height: 148px;
 }
 .description-block .preview-image .icon {
-  height: 180px;
+  min-height: 180px;
   line-height: 180px;
 }
 .description-block .description {
-  margin: 30px 0;
+  margin: 30px -15px;
 }
 .description-block .description.boxed {
   background-color: #f1f1f1;
@@ -6189,9 +6189,20 @@ button.close {
   font-weight: 700;
   color: #4e4e4e;
 }
+.jumbotron {
+  background-size: cover;
+}
+.jumbotron.about {
+  background: url(../images/jumbotron-about.jpg) no-repeat;
+  min-height: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.jumbotron.about h1 {
+  color: #242424;
+}
 .jumbotron.home {
   background: url(../images/jumbotron-home.png) no-repeat;
-  background-size: cover;
   min-height: 436px;
   margin-bottom: 0;
 }
@@ -6252,6 +6263,7 @@ button.close {
   font-weight: 700;
   font-size: 22px;
   text-align: center;
+  text-transform: uppercase;
 }
 .section.primary {
   background-color: #d4d4d4;

@@ -6,13 +6,13 @@
         min-height: 148px;
 
         .icon {
-            height: 180px;
+            min-height: 180px;
             line-height: 180px;
         }
     }
 
     .description {
-        margin: 30px 0;
+        margin: 30px -15px;
 
         &.boxed {
             background-color: @off-white;
@@ -27,9 +27,18 @@
 }
 
 .jumbotron {
+    background-size: cover;
+
+    &.about {
+        background: url(../images/jumbotron-about.jpg) no-repeat;
+        min-height: 120px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h1 { color: @gray-darker; }
+    }
+
     &.home {
         background: url(../images/jumbotron-home.png) no-repeat;
-        background-size: cover;
         min-height: 436px;
         margin-bottom: 0;
 
@@ -46,9 +55,7 @@
         padding: 85px 0;
         margin: 0;
 
-        .fa {
-            color: @brand-secondary;
-        }
+        .fa { color: @brand-secondary; }
 
         .emphasis {
             font-style: normal;
@@ -102,7 +109,8 @@
         .banner-header {
             font-weight: 700;
             font-size: 22px;
-            text-align: center;
+            .text-center();
+            .text-uppercase();
         }
     }
 
@@ -124,6 +132,7 @@
     &.tertiary {
         background-color: #fff;
         color: @gray;
+
         .banner { background-color: @gray-lighter; }
     }
 }
