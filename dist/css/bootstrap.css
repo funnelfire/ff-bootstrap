@@ -6195,9 +6195,10 @@ button.close {
 }
 .jumbotron {
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .jumbotron.about {
-  background: url(../images/jumbotron-about.jpg) no-repeat;
+  background-image: url(../images/jumbotron-about.jpg);
   min-height: 120px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -6206,7 +6207,7 @@ button.close {
   color: #242424;
 }
 .jumbotron.home {
-  background: url(../images/jumbotron-home.png) no-repeat;
+  background-image: url(../images/jumbotron-home.png);
   min-height: 436px;
   margin-bottom: 0;
 }
