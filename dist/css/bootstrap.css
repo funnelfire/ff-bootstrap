@@ -6185,7 +6185,7 @@ button.close {
 .description-block .description {
   margin: 30px -15px;
 }
-.description-block .description.boxed {
+.description-block .description .boxed {
   background-color: #f1f1f1;
   padding: 20px 35px;
 }
