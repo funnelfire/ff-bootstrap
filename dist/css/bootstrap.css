@@ -6177,6 +6177,10 @@ button.close {
 .description-block .preview-image .icon {
   min-height: 180px;
   line-height: 180px;
+  text-align: center;
+}
+.description-block .preview-image .icon img {
+  max-width: 100%;
 }
 .description-block .description {
   margin: 30px -15px;
@@ -6296,7 +6300,32 @@ button.close {
   margin: 0;
   text-transform: uppercase;
 }
+.navbar-nav li a.brand-primary {
+  color: #e56b3a;
+  font-weight: 700;
+}
 .button-container {
   padding: 70px 15px;
 }
+/*
+/* Sticky footer styles
+--------------------------------------------------
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 250px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    padding: 70px 0;
+    color: #fff;
+    font-size: 14px;
+  height: 250px;
+    background-color: @gray-darker;
+}
+*/
 /*# sourceMappingURL=bootstrap.css.map */

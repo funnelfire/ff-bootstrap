@@ -8,6 +8,11 @@
         .icon {
             min-height: 180px;
             line-height: 180px;
+            .text-center();
+
+            img {
+                max-width: 100%;
+            }
         }
     }
 
@@ -146,4 +151,31 @@
     .text-uppercase();
 }
 
+.navbar-nav li a.brand-primary {
+    color: @brand-primary;
+    font-weight: 700;
+}
+
 .button-container { padding: 70px 15px; }
+
+/*
+/* Sticky footer styles
+--------------------------------------------------
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 250px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    padding: 70px 0;
+    color: #fff;
+    font-size: 14px;
+  height: 250px;
+    background-color: @gray-darker;
+}
+*/
