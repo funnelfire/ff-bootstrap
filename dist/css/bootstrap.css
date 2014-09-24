@@ -6174,7 +6174,7 @@ button.close {
 .description-block .preview-image {
   min-height: 148px;
 }
-.description-block .preview-image .equation {
+.description-block .preview-image .icon {
   height: 180px;
   line-height: 180px;
 }
@@ -6267,6 +6267,13 @@ button.close {
   color: #4e4e4e;
 }
 .section.secondary .banner {
+  background-color: #d4d4d4;
+}
+.section.tertiary {
+  background-color: #fff;
+  color: #4e4e4e;
+}
+.section.tertiary .banner {
   background-color: #d4d4d4;
 }
 .divider {
