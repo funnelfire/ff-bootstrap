@@ -6212,4 +6212,28 @@ button.close {
   width: 865px;
   margin: auto;
 }
+.section .content {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+.section .banner {
+  height: 64px;
+  line-height: 64px;
+  background: #d4d4d4;
+}
+.section .banner .banner-header {
+  color: #4e4e4e;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+.section .banner .banner-header.primary {
+  background-color: #e56b3a;
+}
+.section .banner .banner-header.secondary {
+  background-color: #ffc273;
+}
+.section .banner .banner-header.tertiary {
+  background-color: #c1c48a;
+}
 /*# sourceMappingURL=bootstrap.css.map */

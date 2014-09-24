@@ -52,5 +52,25 @@
     }
 }
 
-.banner {
+.section {
+    .content { margin-top: 55px; margin-bottom: 55px; }
+
+    .banner {
+        height: 64px;
+        line-height: 64px;
+        background: @gray-lighter;
+
+        .banner-header {
+            color: @gray;
+            font-weight: 700;
+            font-size: 22px;
+            text-align: center;
+
+            &.primary { background-color: @brand-primary; }
+
+            &.secondary { background-color: @brand-secondary; }
+
+            &.tertiary { background-color: @brand-tertiary; }
+        }
+    }
 }
