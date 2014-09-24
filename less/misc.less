@@ -1,12 +1,21 @@
 .description-block {
+    margin-top: 40px;
     margin-bottom: 70px;
 
-    .preview-image { height: 148px; }
+    .preview-image { min-height: 148px;
+        .equation {
+            height: 180px;
+            line-height: 180px;
+        }
+    }
 
     .description {
-        background-color: @off-white;
         margin: 30px 0;
-        padding: 20px 35px;
+
+        &.boxed {
+            background-color: @off-white;
+            padding: 20px 35px;
+        }
 
         h5 {
             font-weight: 700;
@@ -20,6 +29,7 @@
         background: url(../images/jumbotron-home.png) no-repeat;
         background-size: cover;
         min-height: 436px;
+        margin-bottom: 0;
 
         h1 { margin-bottom: 50px; }
 
@@ -46,31 +56,65 @@
             padding: 0;
             margin: 0;
             border: none;
-            width: 865px;
+            max-width: 865px;
             margin: auto;
         }
     }
 }
 
+.primary {
+    background-color: @brand-primary;
+    color: #FFF;
+}
+
+.secondary {
+    background-color: @brand-secondary;
+    color: @gray;
+}
+
+.tertiary {
+    background-color: @brand-tertiary;
+    color: #FFF;
+}
+
 .section {
-    .content { margin-top: 55px; margin-bottom: 55px; }
+    .content {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
 
     .banner {
         height: 64px;
         line-height: 64px;
-        background: @gray-lighter;
 
         .banner-header {
-            color: @gray;
             font-weight: 700;
             font-size: 22px;
             text-align: center;
-
-            &.primary { background-color: @brand-primary; }
-
-            &.secondary { background-color: @brand-secondary; }
-
-            &.tertiary { background-color: @brand-tertiary; }
         }
     }
+
+    &.primary {
+        background-color: @gray-lighter;
+
+        .banner { background-color: @off-white; }
+
+        .content { color: @gray-darker; }
+    }
+
+    &.secondary {
+        background-color: #f2f4f2;
+        color: @gray;
+
+        .banner { background-color: @gray-lighter; }
+    }
+}
+
+.divider {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 64px;
+    margin: 0;
+    .text-uppercase();
 }
