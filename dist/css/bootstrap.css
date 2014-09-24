@@ -1269,7 +1269,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 12px 24px;
   margin: 0 0 24px;
-  font-size: 21.25px;
+  font-size: 24px;
   border-left: 5px solid #d4d4d4;
 }
 blockquote p:last-child,
@@ -1283,7 +1283,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857143;
-  color: #999999;
+  color: #f1f1f1;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -2714,6 +2714,7 @@ select[multiple].input-lg {
   background-image: none;
   border: 3px solid transparent;
   white-space: nowrap;
+  text-transform: uppercase;
   padding: 24px 85px;
   font-size: 17px;
   line-height: 1.42857143;
@@ -2794,18 +2795,18 @@ fieldset[disabled] .btn-default.active {
   background-color: #f2f4f2;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #e56b3a;
-  border-color: #e25a23;
+  color: #e56b3a;
+  background-color: transparent;
+  border-color: #e56b3a;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #d04f1c;
-  border-color: #b14317;
+  color: #e56b3a;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #c74c1a;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2827,12 +2828,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #e56b3a;
-  border-color: #e25a23;
+  background-color: transparent;
+  border-color: #e56b3a;
 }
 .btn-primary .badge {
-  color: #e56b3a;
-  background-color: #ffffff;
+  color: transparent;
+  background-color: #e56b3a;
 }
 .btn-success {
   color: #ffffff;
@@ -4529,7 +4530,7 @@ a.list-group-item.active > .badge,
 .jumbotron {
   padding: 100px;
   margin-bottom: 40px;
-  color: #ffffff;
+  color: #f1f1f1;
   background-color: #d4d4d4;
 }
 .jumbotron h1,
@@ -6202,10 +6203,12 @@ button.close {
   font-weight: 800;
 }
 .jumbotron.quote {
-  text-transform: uppercase;
   background: #4e4e4e;
-  padding: 85px 150px;
+  padding: 85px 0;
   margin: 0;
+}
+.jumbotron.quote .fa {
+  color: #ffc273;
 }
 .jumbotron.quote .emphasis {
   font-style: normal;
@@ -6213,12 +6216,17 @@ button.close {
   color: #ffc273;
 }
 .jumbotron.quote .quote-text {
-  font-size: 24px;
   padding: 0;
   margin: 0;
   border: none;
-  max-width: 865px;
-  margin: auto;
+}
+.jumbotron.quote .quote-text footer {
+  font-size: 17px;
+  margin: 15px auto;
+}
+.jumbotron.quote .quote-text footer .source {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .primary {
   background-color: #e56b3a;
@@ -6268,5 +6276,8 @@ button.close {
   line-height: 64px;
   margin: 0;
   text-transform: uppercase;
+}
+.button-container {
+  padding: 70px 15px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

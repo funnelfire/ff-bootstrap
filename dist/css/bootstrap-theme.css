@@ -54,27 +54,27 @@
   background-image: none;
 }
 .btn-primary {
-  background-image: -webkit-linear-gradient(top, #e56b3a 0%, #c74c1a 100%);
-  background-image: -o-linear-gradient(top, #e56b3a 0%, #c74c1a 100%);
-  background-image: linear-gradient(to bottom, #e56b3a 0%, #c74c1a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe56b3a', endColorstr='#ffc74c1a', GradientType=0);
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #be4919;
+  border-color: rgba(0, 0, 0, 0);
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #c74c1a;
+  background-color: rgba(0, 0, 0, 0);
   background-position: 0 -15px;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #c74c1a;
-  border-color: #be4919;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
 }
 .btn-primary:disabled,
 .btn-primary[disabled] {
-  background-color: #c74c1a;
+  background-color: rgba(0, 0, 0, 0);
   background-image: none;
 }
 .btn-success {
