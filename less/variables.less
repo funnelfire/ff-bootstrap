@@ -177,24 +177,25 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       #fff;
+@input-bg:                       @off-white;
 //** `<input disabled>` background color
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
 @input-color:                    @gray;
 //** `<input>` border color
-@input-border:                   #ccc;
+@input-border:                   @off-white;
 //** `<input>` border radius
-@input-border-radius:            @border-radius-base;
+@input-border-radius:            0;
 //** Border color for inputs on focus
-@input-border-focus:             #66afe9;
+@input-border-focus:             @off-white;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray-light;
+@input-color-placeholder:        @gray-lighter;
 
 //** Default `.form-control` height
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-base:              50px;
+@input-font-size-base:           22px;
 //** Large `.form-control` height
 @input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
@@ -471,7 +472,7 @@
 
 @jumbotron-padding:              100px;
 @jumbotron-margin-bottom:        40px;
-@jumbotron-color:                #F1F1F1;
+@jumbotron-color:                @off-white;
 @jumbotron-bg:                   @gray-lighter;
 @jumbotron-heading-color:        #FFF;
 @jumbotron-heading-size:         55px;
