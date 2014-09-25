@@ -1,3 +1,5 @@
+.resizable-image { max-width: 100%; }
+
 .description-block {
     margin-top: 40px;
     margin-bottom: 70px;
@@ -10,8 +12,12 @@
             line-height: 180px;
             .text-center();
 
-            img {
-                max-width: 100%;
+            .boxed-icon {
+                height: 163px;
+                width: 163px;
+                line-height: 163px;
+                border: 3px solid #3f3f3f;
+                margin: auto;
             }
         }
     }
@@ -40,7 +46,28 @@
         min-height: 120px;
         padding-top: 50px;
         padding-bottom: 50px;
+
         h1 { color: @gray-darker; }
+    }
+
+    &.trial {
+        min-height: 240px;
+        background-image: url(../images/jumbotron-trial.jpg);
+        padding: 80px 0;
+        margin-bottom: 0;
+        .text-center();
+    }
+
+    &.description {
+        background: @off-white;
+        color: @gray-darker;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-bottom: 0;
+
+        .description-container { padding: 65px 0; }
+
+        p { font-size: 17px; }
     }
 
     &.home {
@@ -159,24 +186,34 @@
 
 .button-container { padding: 70px 15px; }
 
-/*
 /* Sticky footer styles
---------------------------------------------------
-html {
-  position: relative;
-  min-height: 100%;
+ -------------------------------------------------- */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
 }
-body {
-  margin-bottom: 250px;
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -250px;
+    /* Pad bottom by footer height */
+    padding: 0 0 250px;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+
+/* Set the fixed height of the footer here */
+#footer {
     padding: 70px 0;
     color: #fff;
     font-size: 14px;
-  height: 250px;
+    height: 250px;
     background-color: @gray-darker;
+
+    a {
+        color: #fff;
+        display: inline-block;
+        margin: 0 0 0 10px;
+    }
 }
-*/

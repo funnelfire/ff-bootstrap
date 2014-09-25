@@ -6167,6 +6167,9 @@ button.close {
     display: none !important;
   }
 }
+.resizable-image {
+  max-width: 100%;
+}
 .description-block {
   margin-top: 40px;
   margin-bottom: 70px;
@@ -6179,8 +6182,12 @@ button.close {
   line-height: 180px;
   text-align: center;
 }
-.description-block .preview-image .icon img {
-  max-width: 100%;
+.description-block .preview-image .icon .boxed-icon {
+  height: 163px;
+  width: 163px;
+  line-height: 163px;
+  border: 3px solid #3f3f3f;
+  margin: auto;
 }
 .description-block .description {
   margin: 30px -15px;
@@ -6205,6 +6212,26 @@ button.close {
 }
 .jumbotron.about h1 {
   color: #242424;
+}
+.jumbotron.trial {
+  min-height: 240px;
+  background-image: url(../images/jumbotron-trial.jpg);
+  padding: 80px 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.jumbotron.description {
+  background: #f1f1f1;
+  color: #242424;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 0;
+}
+.jumbotron.description .description-container {
+  padding: 65px 0;
+}
+.jumbotron.description p {
+  font-size: 17px;
 }
 .jumbotron.home {
   background-image: url(../images/jumbotron-home.png);
@@ -6308,25 +6335,33 @@ button.close {
 .button-container {
   padding: 70px 15px;
 }
-/*
 /* Sticky footer styles
---------------------------------------------------
-html {
-  position: relative;
-  min-height: 100%;
-}
+ -------------------------------------------------- */
+html,
 body {
-  margin-bottom: 250px;
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-    padding: 70px 0;
-    color: #fff;
-    font-size: 14px;
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -250px;
+  /* Pad bottom by footer height */
+  padding: 0 0 250px;
+}
+/* Set the fixed height of the footer here */
+#footer {
+  padding: 70px 0;
+  color: #fff;
+  font-size: 14px;
   height: 250px;
-    background-color: @gray-darker;
+  background-color: #242424;
 }
-*/
+#footer a {
+  color: #fff;
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
