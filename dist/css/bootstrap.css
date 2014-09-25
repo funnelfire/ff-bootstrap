@@ -6177,6 +6177,9 @@ button.close {
 .description-block .preview-image {
   min-height: 148px;
 }
+.description-block .preview-image img {
+  max-width: 100%;
+}
 .description-block .preview-image .icon {
   min-height: 180px;
   line-height: 180px;
