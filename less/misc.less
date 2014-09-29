@@ -1,5 +1,7 @@
 .resizable-image { max-width: 100%; }
 
+.fake-pointer, .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 .description-block {
     margin-top: 40px;
     margin-bottom: 70px;
@@ -236,8 +238,11 @@ html, body {
 
     a {
         color: #fff;
-        display: inline-block;
-        margin: 0 0 0 10px;
+        
+        &.spaced {
+            display: inline-block;
+            margin: 0 0 0 10px;
+        }
     }
 }
 
